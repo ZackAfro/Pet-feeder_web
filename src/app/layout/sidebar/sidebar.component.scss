@@ -1,0 +1,33 @@
+.sidebar {
+  .header-icon {
+    height: 58px;
+    padding: 15px;
+  }
+
+  .header-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    color: white;
+  }
+
+  .current-route {
+    color: #f06292 !important;
+  }
+
+  .menu-item {
+    color: #26c6da;
+    cursor: pointer;
+
+    &:hover {
+      color: #f06292;
+    }
+  }
+}

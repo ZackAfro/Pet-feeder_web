@@ -1,0 +1,16 @@
+<div class="row sidebar">
+  <div class="col">
+    <div class="header-text-div">
+      <img class="header-icon" src="assets/bone.svg">
+    </div>
+    <div class="header-text-div">
+      <div class="header-text">MiPet</div>
+    </div>
+    <mat-list>
+      <mat-list-item [routerLink]="item.route" routerLinkActive="current-route" class="menu-item" *ngFor="let item of menuItems">
+          <mat-icon matListIcon>{{item.icon}}</mat-icon>
+          <div matLine> {{item.name}} </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
