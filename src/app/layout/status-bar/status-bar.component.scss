@@ -1,0 +1,13 @@
+.status-bar {
+  background-color: #455a64;
+  height: 60px;
+
+  .item {
+    color: #f06292;
+    cursor: pointer;
+
+    &:hover {
+      color: #f06292;
+    }
+  }
+}
