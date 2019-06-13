@@ -1,0 +1,30 @@
+@import "../../../assets/theme/_variables.scss";
+
+.photo-roll{
+    .heading{
+        font-size: 26px;
+        color: $primary;
+        font-weight: 600;
+    }
+
+    .photo{
+        max-width:76%;
+        max-height:76%;
+    }
+
+    .photo-text{
+        font-size: 16px;
+        color: $accent;
+    }
+}
+
+.mat-card-header{
+    justify-content: center;
+}
+
+.mat-card-content{
+    justify-content: center;
+}
+.mat-card{
+    background-color: #455a64
+}

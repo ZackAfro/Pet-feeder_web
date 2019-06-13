@@ -1,0 +1,15 @@
+<mat-card class="photo-roll">
+  <mat-card-header>
+    <mat-card-title>
+      <div class="heading center-div">
+        <mat-icon> photo_library</mat-icon><span class="ml-2">Photos</span>
+      </div>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let photo of photos" class="row justify-content-center">
+          <div class="photo-text mb-3">{{photo.petName}} | {{photo.time | date:'HH:mm'}}</div>
+          <img class="photo mb-4" mat-card-image src="{{photo.photoUrl}}" alt="Oops, cant load the photo">
+    </div>
+  </mat-card-content>
+</mat-card>

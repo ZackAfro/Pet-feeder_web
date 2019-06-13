@@ -1,13 +1,30 @@
+@import "../../../assets/theme/_variables.scss";
+
 .status-bar {
   background-color: #455a64;
-  height: 60px;
+  height: 65px;
+
+  .separator{
+    color: $accent;
+    font-size: 25px;
+  }
 
   .item {
-    color: #f06292;
+    color: $accent;
+    font-size: 18px;
     cursor: pointer;
 
     &:hover {
-      color: #f06292;
+      color: $accent-light;
     }
   }
+  .pet-menu {
+    font-size: 22px;
+  }
+
+  .current-user{
+    font-size: 22px;
+  }
 }
+
+

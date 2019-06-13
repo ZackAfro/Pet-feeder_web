@@ -2,8 +2,8 @@
 
 @include mat-core();
 
-$mipet-theme-primary: mat-palette($mat-cyan, 400, 200, 700);
-$mipet-theme-accent:  mat-palette($mat-deep-orange, 400, 200, 700);
+$mipet-theme-primary: mat-palette($mat-cyan, 400, 200, 800);
+$mipet-theme-accent:  mat-palette($mat-deep-orange, 400, 200, 800);
 
 $mipet-theme: mat-light-theme($mipet-theme-primary, $mipet-theme-accent);
 

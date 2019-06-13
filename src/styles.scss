@@ -9,6 +9,16 @@
     border: none;
 }
 
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.center-text{
+    text-align: center;
+}
+
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', cursive;
    }

@@ -1,8 +1,35 @@
 <div class="row justify-content-around align-items-center status-bar">
-  <div class="col-1 item"> asdasd</div>
-  <div class="col-1 item"> asdasd</div>
-  <div class="col-1 item"> asdasd</div>
-  <div class="col-1">
-      <button mat-flat-button color="secondary">Neil Beukes | Logout</button>
+  <div class="col-8 row justify-content-center align-items-center">
+    <div class="col-md-auto item center-div"> <span class="mr-2"> <strong>Next Meal :</strong> {{nextScheduledFeeding | date:'HH:mm'}}</span>
+      <mat-icon> access_time</mat-icon>
+    </div>
+    <span class="separator  ml-4 mr-4">|</span>
+    <div class="col-md-auto item center-div"> <span class="mr-2"> <strong>Food Quantity :</strong> {{daysFoodLeft}} days </span>
+      <mat-icon> today</mat-icon>
+    </div>
+    <span class="separator ml-4 mr-4">|</span>
+    <div class="col-md-auto item center-div"> <span class="mr-2"> <strong>Snacks Quantity :</strong> {{snacksLeft}} </span>
+      <mat-icon> star</mat-icon>
+    </div>
+  </div>
+  <div class="col-1 pl-5 pr-5 pb-3 pt-3">
+    <button mat-stroked-button color="accent" [matMenuTriggerFor]="selectPet" class="float-right">
+      <div class="center-div pet-menu">
+        <mat-icon>pets</mat-icon>
+        <span class="ml-2">{{currentPet.name}}</span>
+      </div>
+    </button>
+    <mat-menu #selectPet="matMenu">
+      <button *ngFor="let pet of pets" (click)="selectCurrentPet(pet)" mat-menu-item>
+        <mat-icon>pets</mat-icon>{{pet.name}}
+      </button>
+    </mat-menu>
+  </div>
+  <div class="col-1 pl-5 pr-5 pb-3 pt-3">
+    <button mat-stroked-button color="primary" class="float-right current-user">
+      <div class="center-div current-user">
+        <mat-icon>face</mat-icon> <span class="ml-2">{{currentUser}}</span>
+      </div>
+    </button>
   </div>
 </div>

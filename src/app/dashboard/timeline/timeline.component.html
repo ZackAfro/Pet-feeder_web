@@ -1,0 +1,23 @@
+<mat-card class="timeline">
+  <mat-card-header>
+    <mat-card-title>
+      <div class="heading center-div">
+        <mat-icon>timeline</mat-icon><span class="ml-2">Events</span>
+      </div>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let event of events" class="row justify-content-center mb-3">
+      <div class="col-2 mr-2">
+        <mat-icon class='event-icon info' *ngIf="event.severity==='Info'">info</mat-icon>
+        <mat-icon class='event-icon warning' *ngIf="event.severity==='Warning'">warning</mat-icon>
+        <mat-icon class='event-icon error' *ngIf="event.severity==='Error'">error_outline</mat-icon>
+      </div>
+      <div class="col-8 ml-4">
+        <div class="row event-message"><strong>{{event.pet}} </strong> - {{event.message}}</div>
+        <div class="row event-time">{{event.time | date:'HH:mm'}}</div>
+      </div>
+      <hr>
+    </div>
+  </mat-card-content>
+</mat-card>

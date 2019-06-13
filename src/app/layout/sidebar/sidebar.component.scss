@@ -1,3 +1,5 @@
+@import "../../../assets/theme/_variables.scss";
+
 .sidebar {
   .header-icon {
     height: 100px;
@@ -19,15 +21,15 @@
   }
 
   .current-route {
-    color: #0095a8!important;
+    color: $primary-dark !important;
   }
 
   .menu-item {
-    color: #26c6da;
+    color: $primary;
     cursor: pointer;
 
     &:hover {
-      color: #ff7043;
+      color: $accent;
     }
   }
 }

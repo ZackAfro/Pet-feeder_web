@@ -24,7 +24,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/mipet-theme.scss"
+              "src/assets/theme/mipet-theme.scss",
+              "src/assets/theme/_variables.scss"
             ],
             "scripts": []
           },

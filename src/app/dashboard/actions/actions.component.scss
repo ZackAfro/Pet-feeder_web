@@ -1,0 +1,38 @@
+@import "../../../assets/theme/_variables.scss";
+
+.actions{
+    .heading{
+        font-size: 26px;
+        color: $primary;
+        font-weight: 600;
+    }
+
+    .action-item-circle{
+        border: solid 3px $primary;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $primary-dark;
+        }
+        
+        .text{
+            font-size: 20px;
+            font-weight: 600;
+            color: $accent;
+        }
+    }
+}
+
+.mat-card-header{
+    justify-content: center;
+}
+
+.mat-card-content{
+    justify-content: center;
+}
+.mat-card{
+    background-color: #455a64
+}

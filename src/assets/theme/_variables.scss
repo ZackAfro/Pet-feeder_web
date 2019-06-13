@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+
+$primary: mat-color($mat-cyan, 400);
+$accent:  mat-color($mat-deep-orange, 400);
+$primary-dark: mat-color($mat-cyan, 800);
+$accent-dark:  mat-color($mat-deep-orange, 800);
+$primary-light: mat-color($mat-cyan, 200);
+$accent-light:  mat-color($mat-deep-orange, 200);
+$error: #F44336;
+$background-grey: #263238;
